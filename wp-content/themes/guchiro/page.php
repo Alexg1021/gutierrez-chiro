@@ -1,38 +1,45 @@
-<?php
-/**
- * The template for displaying all pages.
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
- *
- * @package SKT Healing Touch
- */
+<?php get_header(); ?>
 
-get_header(); ?>
+	<main role="main">
+		<!-- section -->
+		<section>
 
-	<div id="content">
-<div class="site-aligner">
-    <section class="site-main content-left" id="sitemain">
- 		<?php if( have_posts() ) :
-							while( have_posts() ) : the_post(); ?>
-                            	<h1 class="entry-title"><?php the_title(); ?></h1>
-                                <div class="entry-content">
-                                			<?php the_content(); ?>
-                                            <?php
-												//If comments are open or we have at least one comment, load up the comment template
-												if ( comments_open() || '0' != get_comments_number() )
-													comments_template();
-												?>
-                                </div><!-- entry-content -->
-                      		<?php endwhile; else : endif; ?>
-      <div class="clear"></div>
-        </section>
-        <div class="sidebar_right">
-        <?php get_sidebar();?>
-        </div><!-- sidebar_right -->
-        <div class="clear"></div>
-    </div>
-    </div><!-- content -->
+			<h1><?php the_title(); ?></h1>
+
+		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+
+			<!-- article -->
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+				<?php the_content(); ?>
+
+				<?php comments_template( '', true ); // Remove if you don't want comments ?>
+
+				<br class="clear">
+
+				<?php edit_post_link(); ?>
+
+			</article>
+			<!-- /article -->
+
+		<?php endwhile; ?>
+
+		<?php else: ?>
+
+			<!-- article -->
+			<article>
+
+				<h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
+
+			</article>
+			<!-- /article -->
+
+		<?php endif; ?>
+
+		</section>
+		<!-- /section -->
+	</main>
+
+<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

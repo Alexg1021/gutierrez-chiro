@@ -1,25 +1,24 @@
-<?php
-/**
- * The template for displaying 404 pages (Not Found).
- *
- * @package SKT Healing Touch
- */
+<?php get_header(); ?>
 
-get_header(); ?>
+	<main role="main">
+		<!-- section -->
+		<section>
 
-<div id="content">
-    <div class="site-aligner">
-        <section class="site-main" id="sitemain">
- 
-                <h1 class="entry-title"><?php _e( '404 Not Found', 'healing-touch' ); ?></h1>
- 
-            <div class="page-content">
-                <p class="text-404"><?php _e( 'Looks like you have taken a wrong turn..... Don\'t worry... it happens to the best of us.', 'healing-touch' ); ?></p>
-               
-            </div><!-- .page-content -->
-        </section>
-        <div class="clear"></div>
-    </div>
-</div>
+			<!-- article -->
+			<article id="post-404">
+
+				<h1><?php _e( 'Page not found', 'html5blank' ); ?></h1>
+				<h2>
+					<a href="<?php echo home_url(); ?>"><?php _e( 'Return home?', 'html5blank' ); ?></a>
+				</h2>
+
+			</article>
+			<!-- /article -->
+
+		</section>
+		<!-- /section -->
+	</main>
+
+<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
