@@ -1,0 +1,63 @@
+header {
+  margin-bottom: 100px;
+}
+nav {
+  height: 100px;
+}
+#logo {
+  float: left;
+  margin-left: 5%;
+  font-size: 2.5em;
+  font-weight: 500;
+  margin-top: 1.5%;
+}
+#navbarCollapse ul {
+  float: right;
+  margin-right: 5%;
+  margin-top: 1%;
+}
+header a,
+#navbarCollapse a,
+header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+/*Banner Styles*/
+#banner {
+  height: 500px;
+  background-size: cover;
+  background: url("../../img/jc-adjustment-banner.jpg") center;
+}
+#banner h1 {
+  text-align: center;
+  padding-top: 200px;
+  color: #23fafa;
+}
+#testimonials {
+  margin-top: -175px;
+  text-align: center;
+}
+#testimonials p {
+  text-align: justify;
+}
+.box {
+  height: 400px;
+  background-color: #ff44aa;
+  padding: 15px;
+}
+.col-md-3 {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+/*=====GLOBAL STYLES=====*/
+body {
+  color: #333;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  color: #333;
+  text-decoration: none;
+}

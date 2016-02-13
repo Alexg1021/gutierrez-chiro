@@ -28,32 +28,44 @@
 	<body <?php body_class(); ?>>
 
 		<!-- wrapper -->
-		<div class="wrapper">
-
-			<!-- header -->
-			<header class="header clear" role="banner">
-
-					<!-- logo -->
-					<div class="logo">
-						<a href="<?php echo home_url(); ?>">
-							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
-						</a>
-					</div>
-					<!-- /logo -->
-
-					<!-- nav -->
-					<nav class="nav" role="navigation">
-						<?php html5blank_nav(); ?>
-					</nav>
-					<!-- /nav -->
-
-			</header>
-			<!-- /header -->
+		<div class="">
 
 			<!--=====BEGIN HEADER=====-->
-			<header>
-				
+			<header class="">
+				<div class="container-fluid">
+					<div class="row">
+						<!--Where contact will stay-->
+					</div>
+
+					<nav class="navbar-inverse navbar-fixed-top">
+						<div type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar" id="icon-btn-bar"></span>
+	            <span class="icon-bar" id="icon-btn-bar"></span>
+	            <span class="icon-bar" id="icon-btn-bar"></span>
+	        	</div>
+
+						<div id="logo">
+	            <a class="" href="<?php echo home_url(); ?>">
+	                <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/logo-shift3.png" alt="Logo"> -->
+									Gutierrez-Chiropractic
+	            </a>
+						</div>
+
+						<div id="navbarCollapse" class="collapse navbar-collapse">
+							<?php
+							wp_nav_menu( array(
+											'menu'              => 'primary',
+											'theme_location'    => 'primary',
+											'depth'             => 2,
+											'container'         => false,
+											'menu_class'        => 'nav navbar-nav navbar-right menu',
+											'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+											'walker'            => new wp_bootstrap_navwalker())
+							); ?>
+						</div>
+					</nav>
+				</div>
 			</header>
 
 			<!--=====END HEADER=====-->
