@@ -37,7 +37,7 @@
 						<!--Where contact will stay-->
 					</div>
 
-					<nav class="navbar-inverse navbar-fixed-top">
+					<nav class="navbar-default navbar-fixed-top">
 						<div type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
 	            <span class="sr-only">Toggle navigation</span>
 	            <span class="icon-bar" id="icon-btn-bar"></span>
