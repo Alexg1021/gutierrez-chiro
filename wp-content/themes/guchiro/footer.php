@@ -1,10 +1,25 @@
 			<!-- footer -->
-			<footer class="footer" role="contentinfo">
+			<footer class="" role="contentinfo">
+				<div id="contact" class="row">
+					<div id="hours"class="col-md-4">
+						<a href="#">
+							<i class="fa fa-clock-o hours"></i>
+						</a>
+						<a href="#"><h1>Check our Hours!</h1></a>
+					</div>
+					<div class="col-md-4">
+						<img
+						src="<?php echo get_template_directory_uri(); ?>/img/contact/office.jpg"
+						alt=""
+						class="office-pic"/>
+					</div>
+					<div class="col-md-4"><h1>Google Map</h1></div>
+				</div>
 
 				<!-- copyright -->
 				<p class="copyright">
 					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
+					<a href="//html5blank.com" title="HTML5 Blank">Alian Technologies</a>.
 				</p>
 				<!-- /copyright -->
 

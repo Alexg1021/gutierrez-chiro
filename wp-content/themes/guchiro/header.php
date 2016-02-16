@@ -5,7 +5,7 @@
 		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
 
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
-        <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
+        <link href="<?php echo get_template_directory_uri(); ?>/img/logos/logo-icon.png" rel="shortcut icon">
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
 				<link rel="stylesheet" href="<?=get_template_directory_uri()?>/bower_components/bootstrap/dist/css/bootstrap.css">
     		<link rel="stylesheet" href="<?=get_template_directory_uri()?>/static/css/app.css">
@@ -47,9 +47,12 @@
 
 						<div id="logo">
 	            <a class="" href="<?php echo home_url(); ?>">
-	                <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/logo-shift3.png" alt="Logo"> -->
-									Gutierrez-Chiropractic
+	                <img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logos/gc-logo.png" alt="Logo">
 	            </a>
+						</div>
+						<div class="head-icons">
+							<a href="#"><i class="fa fa-map-marker"></i></a>
+							<a href="#">Make an Appointment</a>
 						</div>
 
 						<div id="navbarCollapse" class="collapse navbar-collapse">
@@ -59,11 +62,16 @@
 											'theme_location'    => 'primary',
 											'depth'             => 2,
 											'container'         => false,
-											'menu_class'        => 'nav navbar-nav navbar-right menu',
+											'menu_class'        => 'nav navbar-nav menu',
 											'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
 											'walker'            => new wp_bootstrap_navwalker())
 							); ?>
+
+
 						</div>
+
+
+
 					</nav>
 				</div>
 			</header>

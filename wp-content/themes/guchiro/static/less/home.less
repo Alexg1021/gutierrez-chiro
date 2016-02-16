@@ -1,17 +1,24 @@
 /*Banner Styles*/
 
 #banner{
+  padding-top:50px;
+  padding-left: 60px;
+  color: #fff;
   height: 500px;
   background-size: cover;
   background: url("../../img/jc-adjustment-banner.jpg") center;
 }
 
 #banner h1{
-  text-align:center;
-  padding-top: 200px;
-  color:#fff;
   font-size: 3em;
   font-weight: 200;
+}
+#banner p{
+  padding-bottom: 15px;
+}
+#banner .service-button:hover{
+  background-color:#50B2A8;
+  border: 2px solid #50B2A8;
 }
 
 /*Info Boxes*/
@@ -21,8 +28,9 @@
 }
 
 .icon-style{
-  padding: 25px 5px 2px 5px;
-  border: 2px solid #333;
+  // padding: 25px 5px 2px 5px;
+  // border: 2px solid #333;
+  // border-radius: 100%;
   // background: rgba(0,0,0,0.25)
 }
 #services p{
@@ -31,8 +39,17 @@
 }
 
 .box{
-  background-color: #ff44aa;
-  padding:35px 15px;
+  background-color:#50B2A8;
+  padding:35px 25px;
+  color: #fff;
+}
+.box a, .box a:hover{
+  color:#fff;
+}
+
+.box:hover{
+  background-color:#333;
+  color: #fff;
 }
 #services .col-md-3{
   padding-right: 5px;
@@ -42,22 +59,32 @@
 .service-button{
   margin-top: 1%;
   padding: 10px 25px;
-  border: 2px solid #333;
-  color: #333;
+  border: 2px solid #fff;
+  color: #fff;
 }
 
 .service-button:hover{
-  background-color:#333;
-  color:#ff44aa;
+  // background-color:#333;
+  color:#fff;
 }
 
 /*testimonial styles*/
+.separator{
+  border-top: 1px solid #333;
+  width: 95%;
+  margin: 0 auto;
+}
 #testimonials{
-  margin-top: 30px;
+  padding: 40px 0px;
 }
 .testimonial-pic{
   height: 150px;
   width: 150px;
   border: 2px solid #333;
   border-radius: 100%;
+}
+
+#testimonials h1{
+  margin-left: 45px;
+
 }
