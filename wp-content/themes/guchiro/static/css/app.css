@@ -132,15 +132,6 @@ header a:hover {
   margin-left: 45px;
 }
 /*=====Doctor Styles=====*/
-#page-title {
-  padding-top: 30px;
-}
-#page-title .container {
-  padding-left: 5px;
-}
-#page-title h1 {
-  color: #50B2A8;
-}
 #doctor-content p {
   text-align: justify;
 }
@@ -149,6 +140,14 @@ header a:hover {
   padding: 15px 0px;
 }
 /*=====Contact Styles=====*/
+#contact-form {
+  background: url("../../img/contact/office.jpg");
+  background-size: cover;
+  height: 500px;
+}
+#contact-form h1 {
+  text-align: center;
+}
 /*=====Footer Styles=====*/
 .office-pic {
   height: 300px;
@@ -242,4 +241,14 @@ h1 {
 }
 ul {
   list-style-type: none;
+}
+/*Global Page Title Styles*/
+#page-title {
+  padding-top: 30px;
+}
+#page-title .container {
+  padding-left: 5px;
+}
+#page-title h1 {
+  color: #50B2A8;
 }
