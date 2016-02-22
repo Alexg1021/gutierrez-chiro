@@ -176,24 +176,33 @@ header a:hover {
   border: 1px;
 }
 /*=====Footer Styles=====*/
+#text-2 h2 {
+  display: none;
+}
+.bizoh-table {
+  width: 73%!important;
+  margin: 0 auto;
+  margin-bottom: 0!important;
+}
+#hours td,
+#hours th {
+  padding: 0.1em;
+}
+.hours-h2 {
+  font-weight: 200;
+  margin-top: 0;
+}
 .office-pic {
-  height: 300px;
-  width: auto;
+  max-width: 73%;
+  max-height: 100%;
   border: 1px solid #333;
   border-radius: 5px;
-  margin-left: 10%;
+  margin: 0 auto;
 }
 #contact {
   background-color: #333;
   color: #fff;
-  padding: 30px 40px;
-}
-.table {
-  max-width: 50%;
-  margin-left: 25%;
-}
-thead th {
-  text-align: center;
+  padding: 20px 0px;
 }
 #contact a {
   color: #fff;
@@ -202,12 +211,17 @@ thead th {
   text-align: center;
 }
 .hours {
-  font-size: 4.5em;
+  font-size: 3.5em;
+}
+#office-pic {
+  text-align: center;
+}
+#office-pic h2 {
+  margin-top: 0;
 }
 .contact-header {
   text-align: center;
   font-weight: 200;
-  margin-bottom: 25px;
 }
 #copyright {
   background-color: #50B2A8;

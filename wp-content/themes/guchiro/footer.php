@@ -1,13 +1,18 @@
 			<!-- footer -->
 			<footer class="" role="contentinfo">
 				<div id="contact" class="row">
-					<div id="hours"class="col-md-6">
+					<div id="hours"class="col-md-4 col-md-offset-1">
 						<a href="#">
 							<i class="fa fa-clock-o hours"></i>
 						</a>
-						<a href="#"><h1>Check our Hours!</h1></a>
+						<a href="#"><h2 class="hours-h2">Check our Hours!</h2></a>
+
+					<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
 					</div>
-					<div class="col-md-6">
+					<div id="office-pic" class="col-md-4 col-md-offset-2">
+						<a href="#">
+							<i class="fa fa-map-marker hours"></i>
+						</a>
 						<h2 class="contact-header">Come by and visit us soon!</h2>
 						<img
 						src="<?php echo get_template_directory_uri(); ?>/img/contact/office.jpg"
