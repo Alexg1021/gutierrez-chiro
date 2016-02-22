@@ -141,12 +141,39 @@ header a:hover {
 }
 /*=====Contact Styles=====*/
 #contact-form {
-  background: url("../../img/contact/office.jpg");
+  background: url("../../img/contact/office.jpg") rgba(0, 0, 0, 0.2);
   background-size: cover;
   height: 500px;
+  padding-top: 40px;
 }
 #contact-form h1 {
   text-align: center;
+}
+.form {
+  width: 500px;
+  margin: 0 auto;
+}
+.form input,
+.form textarea {
+  border: 2px solid #eee;
+  border-radius: 4px;
+}
+.form input {
+  height: 35px!important;
+}
+.field-wrap {
+  margin-bottom: 12px!important;
+}
+.ninja-forms-required-items {
+  padding: 5px 0;
+}
+#ninja_forms_field_5 {
+  height: 40px!important;
+  width: 100px;
+  font-size: 1.2em;
+  background-color: #333;
+  color: #fff;
+  border: 1px;
 }
 /*=====Footer Styles=====*/
 .office-pic {
