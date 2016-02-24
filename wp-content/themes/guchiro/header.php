@@ -51,8 +51,8 @@
 	            </a>
 						</div>
 						<div class="head-icons">
-							<a href="#"><i class="fa fa-map-marker"></i></a>
-							<a href="#">Make an Appointment</a>
+							<a href="#"><i class="fa fa-clock-o"></i></a>
+							<a href="#"><i class="fa fa-envelope"></i></a>
 						</div>
 
 						<div id="navbarCollapse" class="collapse navbar-collapse">
