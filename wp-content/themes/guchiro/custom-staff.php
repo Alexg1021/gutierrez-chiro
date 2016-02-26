@@ -18,14 +18,27 @@
 
     if ($staff->have_posts()):
 					while ($staff->have_posts()): $staff->the_post()?>
-  <h2><?=types_render_field('title', array('output' => 'raw')); ?></h2>
-  <div class="">
-    <?=types_render_field('biography', array('output' => 'raw')); ?>
-  </div>
-  <img src="<?=types_render_field('photo', array('output' => 'raw')); ?>" alt="" />
 
+          <div id="staff"class="row ">
+            <div class="col-md-3 col-md-offset-1">
+              <div class="staff-photo-box">
+                <img class="staff-photo"
+                src="<?=types_render_field('photo', array('output' => 'raw')); ?>" alt="" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h2><?php the_title();?></h2>
 
+              <h3><?=types_render_field('title', array('output' => 'raw')); ?></h3>
+
+              <p>
+                <?=types_render_field('biography', array('output' => 'raw')); ?>
+              </p>
+            </div>
+            </div>
 
 	<?php endwhile; endif;?>
+  <?php wp_reset_postdata(); ?>
+
 
 <?php get_footer();?>

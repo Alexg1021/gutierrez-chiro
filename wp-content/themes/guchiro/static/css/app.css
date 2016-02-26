@@ -1,12 +1,29 @@
 header {
-  margin-bottom: 60px;
+  margin-bottom: 110px;
 }
 nav {
-  height: 60px;
+  height: 110px;
 }
 #global-nav {
-  height: 30px;
-  background-color: #333;
+  height: 50px;
+  background-color: #60646D;
+  padding-top: 15px;
+}
+#global-nav p {
+  color: #fff;
+  margin: 0;
+  float: left;
+}
+#global-icons {
+  width: 200px;
+  position: absolute;
+  top: 7%;
+  right: 1%;
+}
+#global-icons a {
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: #60646d;
 }
 #logo {
   float: left;
@@ -40,8 +57,8 @@ header a:hover {
 .head-icons {
   float: right;
   position: absolute;
-  top: 23%;
-  right: 2%;
+  top: 58%;
+  right: 13%;
 }
 .head-icons a {
   color: #50B2A8;
@@ -56,30 +73,31 @@ header a:hover {
   background-color: #50b2a8;
   color: #fff;
 }
+.icon-hours,
+.icon-contact {
+  font-size: 16px;
+  font-weight: 600;
+}
+.icon-hours {
+  padding-right: 5px;
+}
 /*Banner Styles*/
+.sp-grab {
+  cursor: default!important;
+}
+.sp-grabbing {
+  cursor: pointer!important;
+}
 #banner {
-  padding-top: 30px;
-  padding-left: 60px;
-  color: #fff;
-  height: 500px;
-  background-size: cover;
-  background: url("../../img/jc-adjustment-banner.jpg") center;
-}
-#banner h1 {
-  font-size: 3em;
-  font-weight: 200;
-}
-#banner p {
-  padding-bottom: 15px;
-}
-#banner .service-button:hover {
-  background-color: #50B2A8;
-  border: 2px solid #50B2A8;
+  height: 700px;
+  overflow: hidden;
 }
 /*Info Boxes*/
 #services {
   text-align: center;
-  margin: -100px 100px 0 100px;
+  position: relative;
+  margin: -100px 100px 0px 100px;
+  z-index: 10;
 }
 #services p {
   text-align: justify;
@@ -120,14 +138,15 @@ header a:hover {
 #testimonials {
   padding: 40px 0px;
 }
-.testimonial-pic {
-  height: 150px;
-  width: 150px;
-  border: 2px solid #333;
-  border-radius: 100%;
-}
 #testimonials h1 {
   margin-left: 45px;
+}
+.cbp-qtcontent blockquote {
+  border-left: 0px!important;
+}
+.cbp-qtcontent p,
+.cbp-qtcontent footer {
+  color: #333!important;
 }
 /*=====Doctor Styles=====*/
 #doctor-content p {
@@ -141,23 +160,37 @@ header a:hover {
 #contact-form {
   background: url("../../img/contact/office.jpg") rgba(0, 0, 0, 0.2);
   background-size: cover;
-  height: 500px;
+  height: 650px;
   padding-top: 40px;
+  background-attachment: fixed;
 }
-#contact-form h1 {
-  text-align: center;
+.contact-content {
+  background-color: rgba(96, 100, 109, 0.6);
+  width: 85%;
+  height: 550px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  color: #fff;
+}
+.content {
+  float: right;
+  font-size: 1.5em;
+}
+.content a {
+  color: #fff;
 }
 .form {
   width: 500px;
-  margin: 0 auto;
+  float: left;
+  color: #333;
 }
 .form input,
 .form textarea {
-  border: 2px solid #eee;
-  border-radius: 4px;
+  border: 1px solid #eee;
 }
 .form input {
-  height: 35px!important;
+  height: 45px!important;
+  margin: 5px 0;
 }
 .field-wrap {
   margin-bottom: 12px!important;
@@ -251,6 +284,39 @@ header a:hover {
 }
 .sm-icons i {
   font-size: 1.5em;
+}
+/*==========Staff Styles Sheet========*/
+#staff {
+  height: 350px;
+  margin: 20px 0;
+}
+#staff h2,
+#staff h3 {
+  margin-top: 0;
+}
+#staff h3 {
+  font-weight: 300;
+}
+.staff-photo {
+  width: 100%!important;
+  height: auto;
+  border-radius: 5px;
+}
+/*========Services Style Sheet==========*/
+#service h2 {
+  margin-top: 0px;
+}
+#service p {
+  margin-bottom: 0px;
+}
+.service-container {
+  margin: 10px 0px 15px 0px;
+  padding: 10px 0;
+}
+.service-photo {
+  height: 275px;
+  width: auto;
+  border-radius: 5px;
 }
 /*=====GLOBAL STYLES=====*/
 html {

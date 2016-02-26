@@ -1,30 +1,40 @@
 /*Banner Styles*/
 
+.sp-grab{
+  cursor: default!important;
+}
+.sp-grabbing{
+  cursor: pointer!important;
+}
+
 #banner{
-  padding-top:30px;
-  padding-left: 60px;
-  color: #fff;
-  height: 500px;
-  background-size: cover;
-  background: url("../../img/jc-adjustment-banner.jpg") center;
+  // padding-top:30px;
+  // padding-left: 60px;
+  // color: #fff;
+  height: 700px;
+  overflow: hidden;
+  // background-size: cover;
+  // background: url("../../img/jc-adjustment-banner.jpg") center;
 }
 
 #banner h1{
-  font-size: 3em;
-  font-weight: 200;
+  // font-size: 3em;
+  // font-weight: 200;
 }
 #banner p{
-  padding-bottom: 15px;
+  // padding-bottom: 15px;
 }
 #banner .service-button:hover{
-  background-color:#50B2A8;
-  border: 2px solid #50B2A8;
+  // background-color:#50B2A8;
+  // border: 2px solid #50B2A8;
 }
 
 /*Info Boxes*/
 #services{
   text-align: center;
-  margin: -100px 100px 0 100px;
+  position: relative;
+  margin: -100px 100px 0px 100px;
+  z-index: 10;
 }
 
 .icon-style{
@@ -74,17 +84,19 @@
   width: 95%;
   margin: 0 auto;
 }
+
 #testimonials{
   padding: 40px 0px;
-}
-.testimonial-pic{
-  height: 150px;
-  width: 150px;
-  border: 2px solid #333;
-  border-radius: 100%;
+  // height: 550px;
 }
 
 #testimonials h1{
   margin-left: 45px;
+}
+.cbp-qtcontent blockquote{
+  border-left: 0px!important;
+}
 
+.cbp-qtcontent p, .cbp-qtcontent footer{
+  color:#333!important;
 }

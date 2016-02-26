@@ -8,17 +8,40 @@
     </div>
   </div>
 
+
   <div id="contact-form"class="row">
     <div class="container">
-      <div class="form">
-        <?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 1 ); } ?>
+      <div class="contact-content">
+
+
+        <div class="form">
+          <?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 1 ); } ?>
+        </div>
+
+
+        <div class="content">
+          <h2><?=types_render_field('office-name', array('output' => 'raw')); ?></h2>
+          <p>
+            <?=types_render_field('street-address', array('output' => 'raw')); ?>
+          </p>
+          <p>
+            <?=types_render_field('office-phone', array('output' => 'raw')); ?>
+          </p>
+          <p>
+            <a href="mailto:info@gutierrez-chiropractic.com">
+            <?=types_render_field('office-email', array('output' => 'raw')); ?>
+            </a>
+          </p>
+        </div>
+
+
       </div>
     </div>
   </div>
 
   <div class="row">
     <div class="container-fluid">
-      <?php the_content(); ?>
+<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-3')) ?>
     </div>
   </div>
 

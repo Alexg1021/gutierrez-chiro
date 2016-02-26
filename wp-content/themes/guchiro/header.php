@@ -33,11 +33,18 @@
 			<!--=====BEGIN HEADER=====-->
 			<header class="">
 				<div class="container-fluid">
-					<div class="row">
-						<!--Where contact will stay-->
-					</div>
-
 					<nav class="navbar-default navbar-fixed-top">
+						<div id="global-nav"class="row">
+							<div class="container">
+								<p>Call us today! | (559) 875-4569 | info@gutierrez-chiropractic.com</p>
+
+								<div id="global-icons" class="sm-icons">
+									<a class="sm-tw-icon" href="#"><i class="fa fa-twitter"></i></a>
+									<a class="sm-fb-icon" href="#"><i class="fa fa-facebook"></i></a>
+								</div>
+								</div>
+						</div>
+						<div class="container">
 						<div type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
 	            <span class="sr-only">Toggle navigation</span>
 	            <span class="icon-bar" id="icon-btn-bar"></span>
@@ -51,8 +58,8 @@
 	            </a>
 						</div>
 						<div class="head-icons">
-							<a href="#"><i class="fa fa-clock-o"></i></a>
-							<a href="#"><i class="fa fa-envelope"></i></a>
+							<a href="#"><i class="fa fa-clock-o"></i><span class="icon-hours">Hours</span></a>
+							<a href="#"><i class="fa fa-envelope"> <span class="icon-contact">Contact</span></i></a>
 						</div>
 
 						<div id="navbarCollapse" class="collapse navbar-collapse">
@@ -67,6 +74,7 @@
 											'walker'            => new wp_bootstrap_navwalker())
 							); ?>
 						</div>
+					</div>
 					</nav>
 				</div>
 			</header>
