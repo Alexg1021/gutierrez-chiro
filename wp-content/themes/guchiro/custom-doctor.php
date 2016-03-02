@@ -13,11 +13,11 @@
 
   <div id="doctor-content" class="row">
     <div class="container">
-      <div class="col-md-8">
-        <p><?php the_content(); ?></p>
-      </div>
-      <div class="col-md-4">
+      <div class="col-xs-12">
+        <div class="doctor-image">
           <?php the_post_thumbnail(); ?>
+          </div>
+            <p><?php the_content(); ?></p>
       </div>
 
 

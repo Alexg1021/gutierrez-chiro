@@ -1,18 +1,62 @@
 /*==========Staff Styles Sheet========*/
+.color{
+  background-color: #FFF;
+}
 #staff{
-  height: 350px;
-  margin: 20px 0;
+  // height: 350px;
+  margin: 20px 0 0 0;
 }
 
-#staff h2, #staff h3{
-  margin-top: 0;
+.staff-photo-box{
+  background-color: #F0F4F7;
+  width: 100%;
+  height: 870px;
+  margin: 20px auto;
+  // border: 2px solid #333;
+}
+
+
+#staff h3, #staff h4{
+  margin: 25px 0;
+  padding: 0 15px;
+  font-weight: 200;
+  text-align: center;
 }
 #staff h3{
-  font-weight: 300;
+  // font-weight: 300;
+}
+
+#staff p{
+  padding: 0 15px 15px 15px;
+  text-align: justify;
 }
 .staff-photo {
   width: 100%!important;
   height: auto;
-  border-radius: 5px;
+  // border-radius: 5px;
+}
+// .staff-photo:hover{
+//   transition: all .2s ease-in-out;
+//   -webkit-transform:scale(1.05);
+//   transform:scale(1.05);
+// }
+@media (max-width: @screen-xs-max){
+  .staff-pics{
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+
+  .staff-photo-box{
+    height: auto;
+  }
+
+}
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+
+  .staff-photo-box{
+    height: 820px;
+  }
 
 }

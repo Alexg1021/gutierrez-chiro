@@ -1,5 +1,6 @@
 <?php /* Template Name: Services */ get_header(); ?>
 
+<div class="color">
 <div id="page-title" class="row">
   <div class="container">
     <h1>
@@ -21,20 +22,21 @@
     if ($service->have_posts()):
 					while ($service->have_posts()): $service->the_post()?>
 
-          <div class="col-md-6 service-container">
+          <div class="col-md-6">
+            <div class="service-container">
+              <aside class="service-photo-box">
+                <figure>
+                  <img class="service-photo"
+                  src="<?=types_render_field('service-photo', array('output' => 'raw')); ?>" alt="" />
+                </figure>
+              </aside>
 
-            <div class="col-md-5">
-              <div class="service-photo-box">
-                <img class="service-photo"
-                src="<?=types_render_field('service-photo', array('output' => 'raw')); ?>" alt="" />
+              <div class="service-content">
+                <h2><?=types_render_field('service', array('output' => 'raw')); ?></h2>
+                <p>
+                  <?=types_render_field('description', array('output' => 'raw')); ?>
+                </p>
               </div>
-            </div>
-            <div class="col-md-7">
-              <h2><?=types_render_field('service', array('output' => 'raw')); ?></h2>
-
-              <p>
-                <?=types_render_field('description', array('output' => 'raw')); ?>
-              </p>
             </div>
           </div>
 
@@ -42,6 +44,7 @@
   <?php wp_reset_postdata(); ?>
     </div>
     </div>
+  </div>
 
 
 <?php get_footer();?>

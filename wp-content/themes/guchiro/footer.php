@@ -1,7 +1,8 @@
 			<!-- footer -->
 			<footer class="" role="contentinfo">
 				<div id="contact" class="row">
-					<div id="hours"class="col-md-4 col-md-offset-1">
+					<div class="container">
+					<div id="hours"class="col-md-4">
 						<a href="#">
 							<i class="fa fa-clock-o hours"></i>
 						</a>
@@ -9,7 +10,7 @@
 
 					<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
 					</div>
-					<div id="office-pic" class="col-md-4 col-md-offset-2">
+					<div id="office-pic" class="col-md-4 col-md-offset-4">
 						<a href="#">
 							<i class="fa fa-map-marker hours"></i>
 						</a>
@@ -19,11 +20,13 @@
 						alt=""
 						class="office-pic"/>
 					</div>
+					</div>
 				</div>
 
 				<!-- copyright -->
 				<div id="copyright">
 					<div class="row">
+						<div class="container">
 						<div class="col-md-4">
 							<div class="contact-info">
 								<ul>
@@ -42,6 +45,7 @@
 								&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
 								<a href="//html5blank.com" title="HTML5 Blank">Gutierrez Tech</a>.
 							</p>
+						</div>
 						</div>
 					</div>
 

@@ -3,41 +3,52 @@ header {
 }
 nav {
   height: 110px;
+  background-color: #fff!important;
 }
 #global-nav {
   height: 50px;
-  background-color: #60646D;
+  background-color: #FFF;
   padding-top: 15px;
 }
+#global-nav a {
+  color: #55B2A8;
+}
 #global-nav p {
-  color: #fff;
+  color: #55B2A8;
   margin: 0;
   float: left;
 }
 #global-icons {
-  width: 200px;
-  position: absolute;
-  top: 7%;
-  right: 1%;
+  width: 75px;
+  float: right;
+  margin-top: 0px;
 }
 #global-icons a {
-  color: #fff;
-  border: 2px solid #fff;
-  background-color: #60646d;
+  color: #55B2A8;
+  border: 2px solid #55B2A8;
+  background-color: #FFF;
+}
+.header-separator {
+  border-top: 1px solid #50B2AD;
+  margin: 0 auto;
 }
 #logo {
   float: left;
-  margin-left: 60px;
 }
 .logo {
   height: 80px;
   width: auto;
   margin-top: 10px;
 }
+#navbarCollapse {
+  width: 300px;
+  float: left;
+  margin-left: 8%;
+}
 #navbarCollapse ul {
   float: left;
   margin-left: 3%;
-  margin-top: 17px;
+  margin-top: 16px;
   font-size: 1.1em;
   font-weight: 500;
 }
@@ -50,19 +61,18 @@ header a:hover {
 #menu-primary a {
   color: #50B2A8;
   padding: 10px 9px;
+  font-weight: 200;
 }
 #menu-primary a:hover {
   border-bottom: 4px solid #50B2A8;
 }
 .head-icons {
   float: right;
-  position: absolute;
-  top: 58%;
-  right: 13%;
+  margin-top: 14px;
 }
 .head-icons a {
   color: #50B2A8;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.05);
   padding: 14px 0px 10px 1px;
 }
 .head-icons a i {
@@ -76,10 +86,150 @@ header a:hover {
 .icon-hours,
 .icon-contact {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 200;
 }
 .icon-hours {
   padding-right: 5px;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 62%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 0px 0;
+  margin: 0px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 0px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+#nav-menu-btn {
+  float: left;
+  background-color: transparent;
+  border: 0px solid #333;
+  top: 0px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+#nav-menu-btn {
+  margin-top: 15px;
+}
+#nav-menu-btn .icon-bar {
+  background-color: #50B2A8;
+  height: 4px;
+}
+/*=====Media Queries ======*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .dropdown-menu {
+    position: static;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+  }
+  .head-icons {
+    position: absolute;
+    right: 10%;
+  }
+}
+/** collapse at sm screen with addtnl styling **/
+@media (max-width: 991px) {
+  #navbarCollapse {
+    width: 250px;
+    margin-left: 0%;
+  }
+  .push-down {
+    top: 0;
+  }
+  a.dropdown-toggle {
+    float: none;
+  }
+  .navbar-header {
+    float: none;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 0px solid transparent;
+    box-shadow: inset 0 0px 0 rgba(255, 255, 255, 0.1);
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .navbar-text {
+    float: none;
+    margin: 15px 0;
+  }
+  /* since 3.1.0 */
+  .navbar-collapse.collapse.in {
+    display: block!important;
+  }
+  .collapsing {
+    overflow: hidden!important;
+  }
+  #navbarCollapse {
+    float: left!important;
+    clear: left;
+    border-color: #333;
+    background-color: #fff;
+  }
+  #navbarCollapse a {
+    color: #333;
+  }
+  .img-arrow {
+    text-align: center;
+    padding: 30px 0;
+  }
+  #menu-primary li.active {
+    border-bottom: none;
+  }
+  #menu-primary li:hover {
+    border-bottom: none;
+  }
+  #global-nav {
+    display: none;
+  }
+  #separator {
+    display: none;
+  }
+  header {
+    margin-bottom: 60px;
+  }
+  nav {
+    height: 60px;
+  }
+  .logo {
+    height: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .head-icons {
+    right: 20px;
+    position: absolute;
+  }
+  .head-icons span {
+    display: none;
+  }
 }
 /*Banner Styles*/
 .sp-grab {
@@ -92,11 +242,15 @@ header a:hover {
   height: 700px;
   overflow: hidden;
 }
+.carousel-inner > .item > a > img,
+.carousel-inner > .item > img {
+  margin: 0 auto;
+}
 /*Info Boxes*/
 #services {
   text-align: center;
   position: relative;
-  margin: -100px 100px 0px 100px;
+  margin-top: -100px;
   z-index: 10;
 }
 #services p {
@@ -107,6 +261,7 @@ header a:hover {
   background-color: #50B2A8;
   padding: 35px 25px;
   color: #fff;
+  height: 384px;
 }
 .box a,
 .box a:hover {
@@ -127,19 +282,16 @@ header a:hover {
   color: #fff;
 }
 .service-button:hover {
+  background-color: #50B2A8;
   color: #fff;
 }
 /*testimonial styles*/
 .separator {
   border-top: 1px solid #333;
-  width: 95%;
   margin: 0 auto;
 }
 #testimonials {
   padding: 40px 0px;
-}
-#testimonials h1 {
-  margin-left: 45px;
 }
 .cbp-qtcontent blockquote {
   border-left: 0px!important;
@@ -148,13 +300,28 @@ header a:hover {
 .cbp-qtcontent footer {
   color: #333!important;
 }
+.bx-wrapper .bx-controls-direction a {
+  z-index: 2!important;
+}
 /*=====Doctor Styles=====*/
 #doctor-content p {
   text-align: justify;
 }
+.doctor-image {
+  width: 300px;
+  float: left;
+  margin-right: 20px;
+}
 #doctor-content img {
   width: 100%;
   padding: 15px 0px;
+}
+@media (max-width: 575px) {
+  .doctor-image {
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+  }
 }
 /*=====Contact Styles=====*/
 #contact-form {
@@ -263,16 +430,15 @@ header a:hover {
 }
 #copyright ul {
   margin-bottom: 0;
+  padding-left: 0;
 }
 .sm-icons {
-  padding-left: 35px;
   margin-top: 10px;
 }
 .sm-icons a,
 .sm-icons a:hover {
   background-color: #333;
   color: #50B2A8;
-  margin-left: 5px;
 }
 .sm-tw-icon {
   padding: 9px 5px 3px 5px;
@@ -286,37 +452,85 @@ header a:hover {
   font-size: 1.5em;
 }
 /*==========Staff Styles Sheet========*/
+.color {
+  background-color: #FFF;
+}
 #staff {
-  height: 350px;
-  margin: 20px 0;
+  margin: 20px 0 0 0;
 }
-#staff h2,
-#staff h3 {
-  margin-top: 0;
+.staff-photo-box {
+  background-color: #F0F4F7;
+  width: 100%;
+  height: 870px;
+  margin: 20px auto;
 }
-#staff h3 {
-  font-weight: 300;
+#staff h3,
+#staff h4 {
+  margin: 25px 0;
+  padding: 0 15px;
+  font-weight: 200;
+  text-align: center;
+}
+#staff p {
+  padding: 0 15px 15px 15px;
+  text-align: justify;
 }
 .staff-photo {
   width: 100%!important;
   height: auto;
-  border-radius: 5px;
+}
+@media (max-width: 767px) {
+  .staff-pics {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+  .staff-photo-box {
+    height: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .staff-photo-box {
+    height: 820px;
+  }
 }
 /*========Services Style Sheet==========*/
 #service h2 {
   margin-top: 0px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 200;
 }
 #service p {
   margin-bottom: 0px;
+  text-align: justify;
+}
+.service-photo-box {
+  float: left;
+  height: 300px;
+  width: 185px;
+}
+.service-content {
+  float: left;
+  height: 300px;
+  width: 350px;
+  padding: 15px;
 }
 .service-container {
-  margin: 10px 0px 15px 0px;
-  padding: 10px 0;
+  background-color: #F0F4F7;
+  height: 300px;
+  margin: 10px 0;
 }
 .service-photo {
-  height: 275px;
-  width: auto;
-  border-radius: 5px;
+  height: 300px;
+  width: 185px;
+  border-radius: 0px;
+  float: left;
+}
+.service-photo:hover {
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 /*=====GLOBAL STYLES=====*/
 html {
@@ -347,13 +561,17 @@ h1 {
 ul {
   list-style-type: none;
 }
+.container {
+  width: : 50px;
+}
 /*Global Page Title Styles*/
-#page-title {
-  padding-top: 30px;
-}
-#page-title .container {
-  padding-left: 5px;
-}
 #page-title h1 {
   color: #50B2A8;
+  margin-top: 40px;
+}
+#site-banner {
+  background-size: cover;
+  background: url("../../img/icons/colorfulspine.png") center;
+  height: 200px;
+  border-bottom: 2px solid #50B2A8;
 }

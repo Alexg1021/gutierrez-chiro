@@ -36,7 +36,7 @@
 					<nav class="navbar-default navbar-fixed-top">
 						<div id="global-nav"class="row">
 							<div class="container">
-								<p>Call us today! | (559) 875-4569 | info@gutierrez-chiropractic.com</p>
+								<p>Call us today! | (559) 875-4569 | <a href="mailto:info@gutierrez-chiropractic.com">info@gutierrez-chiropractic.com</a></p>
 
 								<div id="global-icons" class="sm-icons">
 									<a class="sm-tw-icon" href="#"><i class="fa fa-twitter"></i></a>
@@ -44,24 +44,27 @@
 								</div>
 								</div>
 						</div>
+						<div id="separator" class="container">
+							 <div class="header-separator"></div>
+					</div>
+
+
 						<div class="container">
-						<div type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+						<div type="button" class="navbar-toggle" id="nav-menu-btn" data-toggle="collapse" data-target="#navbarCollapse">
 	            <span class="sr-only">Toggle navigation</span>
 	            <span class="icon-bar" id="icon-btn-bar"></span>
 	            <span class="icon-bar" id="icon-btn-bar"></span>
 	            <span class="icon-bar" id="icon-btn-bar"></span>
 	        	</div>
 
+						<!-- Logo -->
 						<div id="logo">
 	            <a class="" href="<?php echo home_url(); ?>">
 	                <img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logos/gc-logo.png" alt="Logo">
 	            </a>
 						</div>
-						<div class="head-icons">
-							<a href="#"><i class="fa fa-clock-o"></i><span class="icon-hours">Hours</span></a>
-							<a href="#"><i class="fa fa-envelope"> <span class="icon-contact">Contact</span></i></a>
-						</div>
 
+						<!--Menu-->
 						<div id="navbarCollapse" class="collapse navbar-collapse">
 							<?php
 							wp_nav_menu( array(
@@ -74,6 +77,14 @@
 											'walker'            => new wp_bootstrap_navwalker())
 							); ?>
 						</div>
+
+						<!--dropdown icons-->
+						<div class="head-icons">
+							<a href="#"><i class="fa fa-clock-o"></i><span class="icon-hours">Hours</span></a>
+							<a href="#"><i class="fa fa-envelope"> <span class="icon-contact">Contact</span></i></a>
+						</div>
+
+
 					</div>
 					</nav>
 				</div>

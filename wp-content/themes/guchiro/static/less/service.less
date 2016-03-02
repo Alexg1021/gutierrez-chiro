@@ -1,19 +1,42 @@
 /*========Services Style Sheet==========*/
 
 #service h2{
-  margin-top: 0px
+  margin-top: 0px;
+  margin-bottom:15px;
+  text-align: center;
+  font-weight: 200;
 }
 #service p{
   margin-bottom: 0px;
+  text-align: justify;
+}
+
+.service-photo-box{
+  float: left;
+  height: 300px;
+  width: 185px;
+}
+.service-content{
+  float: left;
+  height: 300px;
+  width: 350px;
+  padding: 15px;
 }
 .service-container{
-  margin: 10px 0px 15px 0px;
-  // background-color: #50B2A8;
-  padding: 10px 0;
+  background-color: #F0F4F7;
+  height: 300px;
+  margin: 10px 0;
 }
 
 .service-photo{
-  height: 275px;
-  width: auto;
-  border-radius: 5px;
+  height: 300px;
+  width: 185px;
+  border-radius: 0px;
+  float: left;
+
+}
+.service-photo:hover{
+  transition: all .2s ease-in-out;
+  -webkit-transform:scale(1.1);
+  transform:scale(1.1);
 }

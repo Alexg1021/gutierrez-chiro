@@ -1,12 +1,15 @@
 <?php /* Template Name: Staff */ get_header(); ?>
-
-<div id="page-title" class="row">
+<div class="color">
+ <div id="page-title" class="row">
   <div class="container">
     <h1>
     <?php $key="page-title"; echo get_post_meta($post->ID, $key, true); ?>
     </h1>
   </div>
 </div>
+
+<div id="staff"class="row">
+  <div class="container">
 
 <?php
     $args = array(
@@ -19,26 +22,30 @@
     if ($staff->have_posts()):
 					while ($staff->have_posts()): $staff->the_post()?>
 
-          <div id="staff"class="row ">
-            <div class="col-md-3 col-md-offset-1">
-              <div class="staff-photo-box">
-                <img class="staff-photo"
-                src="<?=types_render_field('photo', array('output' => 'raw')); ?>" alt="" />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <h2><?php the_title();?></h2>
 
-              <h3><?=types_render_field('title', array('output' => 'raw')); ?></h3>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="staff-photo-box">
+                <div class="staff-pics">
+                  <img class="staff-photo"
+                  src="<?=types_render_field('photo', array('output' => 'raw')); ?>" alt="" />
+                </div>
+
+              <h3><?php the_title();?></h3>
+
+              <h4><?=types_render_field('title', array('output' => 'raw')); ?></h4>
 
               <p>
                 <?=types_render_field('biography', array('output' => 'raw')); ?>
               </p>
+
+              </div>
             </div>
-            </div>
+
 
 	<?php endwhile; endif;?>
   <?php wp_reset_postdata(); ?>
-
+    </div>
+    </div>
+</div>
 
 <?php get_footer();?>
